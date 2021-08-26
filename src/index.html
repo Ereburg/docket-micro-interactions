@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="./app.scss"/>
+  <link rel="stylesheet" href="./app.scss" />
 </head>
 <body>
 <div class="grid">
@@ -16,7 +16,7 @@
     <div class="notes-container">
       <div class="add-button">
         <button id="addNote">
-          <img src="./assets/icons/plus.svg" alt="Plus Icon"/>
+          <img src="./assets/icons/plus.svg" alt="Plus Icon" />
         </button>
       </div>
       <div class="note-selectors">
@@ -45,37 +45,15 @@
     </div>
   </div>
 
-  <!-- Filter -->
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <defs>
-      <filter id="gooey-effect">
-        <feGaussianBlur
-          in="SourceGraphic"
-          stdDeviation="10"
-          result="blur"
-        />
-        <feColorMatrix
-          in="blur"
-          mode="matrix"
-          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9"
-          result="gooey-effect"
-        />
-        <feComposite
-          in="SourceGraphic"
-          in2="gooey-effect"
-          operator="atop"
-        />
-      </filter>
-    </defs>
-  </svg>
-
   <!-- Header -->
   <header class="header">
     <div class="search">
       <div class="icon">
-        <img src="./assets/icons/search.svg" alt="Search Icon"/>
+        <img src="./assets/icons/search.svg" alt="Search Icon" />
       </div>
-      <input type="text" placeholder="Search"/>
+      <label>
+        <input type="text" placeholder="Search" />
+      </label>
     </div>
   </header>
   <!-- Main -->
@@ -85,14 +63,17 @@
     </div>
     <div class="notes">
       <div class="note">
-        <textarea placeholder="The beginning of screenless design: UI jobs to be take over by Solution Architect"></textarea>
+        <label>
+          <textarea
+            placeholder="The beginning of screenless design: UI jobs to be take over by Solution Architect"></textarea>
+        </label>
         <div class="footer">
           <div class="date">
             <span>May 21, 2021</span>
           </div>
           <div class="edit">
             <button>
-              <img src="./assets/icons/edit.svg" alt="Edit Icon"/>
+              <img src="./assets/icons/edit.svg" alt="Edit Icon" />
             </button>
           </div>
         </div>
@@ -101,5 +82,5 @@
   </main>
 </div>
 </body>
-<script src="./app.ts" defer></script>
+<script src="./app.ts" type="module" defer></script>
 </html>
