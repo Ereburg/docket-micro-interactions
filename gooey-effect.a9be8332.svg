@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg"><defs><filter id="gooey-effect"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/><feColorMatrix in="blur" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -9" result="gooey-effect"/><feComposite in="SourceGraphic" in2="gooey-effect" operator="atop"/></filter></defs></svg>
